@@ -1,0 +1,33 @@
+COEN 233 Fall 2020 (We-Fr Section)
+Shiva Govindaraju
+SCU ID: 1588712
+Prof. Keyvan Moataghed
+
+Assignment 2
+
+Compilation Instructions:
+    Change Directories to "Assign2/".
+    Ensure that the text-file "Verification_Database.txt" is in the directory with the client.c and server.c files, and that the text-file is organized and filled exactly as described in the problem description document.
+    Compile the Client and Server code into executables with the following commands:
+        >> gcc client.c -o client
+        >> gcc server.c -o server
+    Ensure that Port 23456 is available on your machine.
+    
+Execution Instructions:    
+    In one terminal window, start the Server executable within the "Assign1" directory:
+        >> ./server
+    In a different terminal window, start the Client executable. 
+        >> ./client
+    The Client will send out a number of data packets to the Server to gain access permission from the network. The five packets that are sent should get the following notices back from the server:
+        Test 1 : 4085546805 - Access Granted
+        Test 2 : 4086668821 - Not Paid
+        Test 3 : 4086808821 - Not Exist, Tech Mis-Match
+        Test 4 : 4086674674 - Access Granted
+        Test 5 : 4084400332 - Not Exist
+    Note that the Server will not stop between tests, and will continue to run ad-infinitum until the user forcibly stops the Server's operation (via 'Ctrl-C' in the terminal).
+
+Notes:
+This Code was written on an Acer Chromebook, using the Linux Terminal application.
+Running Debian GNU / Linux 9 (stretch)
+Kernal: Linux 5.4.48-06434-gd868196d13af
+Architecture: x86-64

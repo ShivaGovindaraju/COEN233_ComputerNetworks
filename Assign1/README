@@ -1,0 +1,34 @@
+COEN 233 Fall 2020 (We-Fr Section)
+Shiva Govindaraju
+SCU ID: 1588712
+Prof. Keyvan Moataghed
+
+Assignment 1
+
+Compilation Instructions:
+    Change Directories to "Assign1/".
+    Compile the Client and Server code into executables with the following commands:
+        >> gcc client.c -o client
+        >> gcc server.c -o server
+    Ensure that Port 23456 is available on your machine.
+    
+Execution Instructions:    
+    In one terminal window, start the server executable within the "Assign1" directory:
+        >> ./server
+    In a different terminal window, start the client executable. You must provide the Test Case Number for the specific test case you wish the Client to attempt. Test Case 0 does not test for Error Handling, and will send packets that will pass all error-checks. An example is shown here: 
+        >> ./client 0
+    Test Case 1 tests for Out-Of-Order Packets.
+        >> ./client 1
+    Test Case 2 tests for Length Mis-Match.
+        >> ./client 2
+    Test Case 3 tests for Incorrect End-of-Packet IDs.
+        >> ./client 3
+    Test Case 4 tests for Duplicate Packets.
+        >> ./client 4
+    Note that the Server will not stop between tests, and will continue to run ad-infinitum until the user forcibly stops the server's operation (via Ctrl-C in the terminal).
+
+Notes:
+This Code was written on an Acer Chromebook, using the Linux Terminal application.
+Running Debian GNU / Linux 9 (stretch)
+Kernal: Linux 5.4.48-06434-gd868196d13af
+Architecture: x86-64
